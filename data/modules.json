@@ -1,0 +1,32 @@
+{
+  "modules": [
+    {
+      "id": "digilocker",
+      "title": "DigiLocker",
+      "badge": "DigiLocker Explorer",
+      "tag": "Digital documents"
+    },
+    {
+      "id": "aadhaar",
+      "title": "Aadhaar Services",
+      "badge": "Aadhaar Learner",
+      "tag": "Identity services"
+    },
+    {
+      "id": "pan",
+      "title": "PAN Services",
+      "badge": "PAN Pro",
+      "tag": "Tax and identity"
+    },
+    {
+      "id": "safety",
+      "title": "Digital Safety",
+      "badge": "Cyber Safety Champion",
+      "tag": "Online protection"
+    }
+  ],
+  "certificate": {
+    "title": "CERTIFICATE OF COMPLETION",
+    "message": "Complete all four modules and pass the final assessment to unlock your certificate."
+  }
+}

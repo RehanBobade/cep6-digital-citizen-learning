@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Digital Citizen Learning</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="register">
+    <div class="auth-shell">
+      <section class="auth-brand-panel" aria-labelledby="authBrandTitle">
+        <a class="auth-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">✓</span>
+          <span><strong>DIGITAL CITIZEN 360</strong><small>Learning portal</small></span>
+        </a>
+        <div class="auth-brand-copy">
+          <p class="auth-eyebrow">Training on DigiLocker, Aadhaar &amp; PAN Services</p>
+          <h1 id="authBrandTitle">Start Learning</h1>
+          <p>Learn. Understand. Use Digital Services Safely.</p>
+          <ul class="auth-feature-list">
+            <li>Learn Digital Services</li>
+            <li>Watch Educational Videos</li>
+            <li>Take Assessments</li>
+            <li>Earn Your Certificate</li>
+          </ul>
+        </div>
+        <p class="auth-disclaimer">College learning demonstration. Do not enter government IDs, OTPs or financial details.</p>
+      </section>
+
+      <main class="auth-card">
+        <div class="auth-header">
+          <div>
+            <h2>Create Your Account</h2>
+            <p>Set up an account to track your learning progress.</p>
+          </div>
+        </div>
+
+        <form id="registerForm" class="auth-form" novalidate>
+          <div class="field-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" required />
+            <div id="fullNameError" class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field-group">
+            <label for="registerEmail">Email</label>
+            <input id="registerEmail" name="email" type="email" placeholder="Enter your email" required />
+            <div id="registerEmailError" class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field-group">
+            <label for="registerPassword">Password</label>
+            <div class="password-wrap">
+              <input id="registerPassword" name="password" type="password" placeholder="Create a password" required />
+              <button type="button" class="toggle-password" data-toggle-target="registerPassword">Show</button>
+            </div>
+            <div id="registerPasswordError" class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div class="field-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="password-wrap">
+              <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm your password" required />
+              <button type="button" class="toggle-password" data-toggle-target="confirmPassword">Show</button>
+            </div>
+            <div id="confirmPasswordError" class="field-error" aria-live="polite"></div>
+          </div>
+
+          <div id="registerError" class="form-message error hidden" role="alert" aria-live="polite"></div>
+          <div id="registerSuccess" class="form-message success hidden" role="status" aria-live="polite"></div>
+          <button type="submit" class="primary-btn auth-btn" id="registerBtn">Create Account</button>
+          <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </main>
+    </div>
+
+    <script src="js/data/videos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

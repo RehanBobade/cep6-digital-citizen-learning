@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos | Digital Citizen 360</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="videos">
+    <div id="site-header"></div>
+    <main class="container page-shell">
+      <section class="page-heading">
+        <span class="kicker">Learning library</span>
+        <h1>Educational Videos</h1>
+        <p class="subtitle">Browse topic-matched guidance from government and digital-safety sources.</p>
+      </section>
+      <div class="video-library-tools">
+        <label for="videoModuleFilter">Filter by module</label>
+        <select id="videoModuleFilter">
+          <option value="all">All modules</option>
+          <option value="digilocker">DigiLocker</option>
+          <option value="aadhaar">Aadhaar Services</option>
+          <option value="pan">PAN Services</option>
+          <option value="digital-safety">Digital Safety</option>
+        </select>
+        <p id="videoProgressSummary" class="blank-state" aria-live="polite"></p>
+      </div>
+      <div id="videosPageGrid" class="video-grid"></div>
+    </main>
+    <script src="js/data/videos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

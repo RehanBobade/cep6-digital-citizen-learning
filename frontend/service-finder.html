@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Finder | Digital Citizen 360</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="service-finder">
+    <div id="site-header"></div>
+    <main class="container page-shell">
+      <section class="page-heading">
+        <span class="kicker">Choose a learning path</span>
+        <h1>Which Digital Service Do I Need?</h1>
+        <p class="subtitle">Choose the topic you want to learn about. This finder does not collect identity or financial information.</p>
+      </section>
+      <section class="content-card service-finder-panel">
+        <div class="field-group">
+          <label for="serviceNeed">What are you trying to understand?</label>
+          <select id="serviceNeed" name="need">
+            <option value="digilocker">Finding, storing or sharing digital documents</option>
+            <option value="aadhaar">Aadhaar identity services and safe verification</option>
+            <option value="pan">PAN and e-PAN services</option>
+            <option value="digital-safety">Phishing, suspicious messages or online safety</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="serviceGoal">What kind of help do you want?</label>
+          <select id="serviceGoal" name="goal">
+            <option value="learn">Learn the basics</option>
+            <option value="process">Understand a process</option>
+            <option value="safety">Review safe-use practices</option>
+          </select>
+        </div>
+        <button class="primary-btn" type="button" data-action="service-finder-recommend">Show Recommendation</button>
+        <div id="serviceRecommendation" class="service-recommendation" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="js/data/videos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

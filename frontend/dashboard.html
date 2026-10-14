@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Digital Citizen Learning</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div id="site-header"></div>
+    <main class="container page-shell">
+      <section id="firstLoginWelcome" class="first-login-welcome" hidden>
+        <div class="first-login-copy">
+          <span class="kicker">YOUR LEARNING SPACE</span>
+          <h1>Welcome, <span id="firstLoginName">learner</span></h1>
+          <p>Build confidence with digital services, one short lesson at a time.</p>
+          <div class="first-login-actions">
+            <a class="primary-btn" href="modules.html">Explore learning modules</a>
+            <a class="ghost-btn" href="games.html">Try a safety scenario</a>
+          </div>
+        </div>
+        <ol class="first-login-steps" aria-label="A good place to start">
+          <li><span>01</span><div><strong>Choose a topic</strong><small>Start with DigiLocker, Aadhaar, PAN or digital safety.</small></div></li>
+          <li><span>02</span><div><strong>Learn at your pace</strong><small>Explore lessons and videos whenever you are ready.</small></div></li>
+          <li><span>03</span><div><strong>Check your progress</strong><small>Complete a quiz and see your learning take shape.</small></div></li>
+        </ol>
+      </section>
+
+      <section class="dashboard-banner" id="dashboardBanner">
+        <div>
+          <span class="kicker">Student dashboard</span>
+          <h1>Welcome, <span id="studentName">Student</span></h1>
+        </div>
+        <button id="logoutBtn" class="secondary-btn">Logout</button>
+      </section>
+
+      <section class="stats-grid" id="dashboardStats"></section>
+      <section class="dashboard-section" id="moduleProgressSection">
+        <div class="card-holder">
+          <h3>Learning Progress</h3>
+          <div id="moduleProgressList"></div>
+        </div>
+      </section>
+      <section class="dashboard-section" id="badgeSection">
+        <div class="card-holder">
+          <h3>Badges</h3>
+          <div id="badgeList" class="badge-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/data/videos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
